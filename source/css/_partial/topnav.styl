@@ -1,0 +1,147 @@
+
+
+.topnav {
+  width: 100%;
+  height: 62px;
+  border:none;
+  margin-top: 0;
+  display: flex;
+  align-items: baseline;
+  justy-content: space-between;
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky;    // 兼容 -webkit 内核的浏览器
+  top: 0;                          // 必须设一个值，否则不生效
+  line-height: 1.25em;
+
+  /*局部标签定义start*/
+  ul{magrin:0;padding:0 .75em 0 .75em;}//top right bottom left
+  ul li{list-style: none;float: left; clear: both;} 
+  a{text-decoretion:none;}
+  /*局部标签定义end*/
+
+  .blog-title  .logo {
+    margin: 0 1.5em 0 1.5em;
+    color: #1E90FF;
+    font-size: 1.5em;
+    font-family: "comic sans ms";
+    text-align: center;
+    text-decoration: none;
+
+    &:hover{
+      cursor: pointer;
+
+      ::before{
+        content: attr(title);
+      }
+
+      ::after{
+        content: " ";
+        background-color: #d9444a;
+      }
+    }
+
+  }
+
+  .nav {
+    margin: 0 .75em 0 0.75em;
+    float: left;
+    
+
+    .menu {
+      margin: 0 .75em 0 0.75em;
+      display: flex;
+      align-items: baseline;
+      justy-content: space-between;
+      text-align: center;
+      max-height: 40px;
+          
+    }
+    
+    
+
+
+    .menu-item{
+      text-decoration: none;
+      margin: 0 .75em 0 0.75em;
+      padding: 0;
+      max-height: 40px;
+      color: white;
+      background-color: black;
+      
+      text-align: center;
+    }
+  
+    .menu-item:hover {
+      color: #1E90FF;
+      border-bottom: 2px solid #1E90FF;        
+
+    }
+
+    .menu-item-f{
+      margin: 0 0 0 0;
+      padding: 0;
+      justy-content: space-between;
+      width: 120px;
+      max-height: 40px;
+      color: white;
+      background-color: black;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .menu-item-f:hover{
+      color: #1E90FF;
+      max-height: 400px;//最大高度 
+      transition: .5s;//过渡效果
+      cursor: pointer;//鼠标小手
+      border-radius: .25em;
+    }
+
+
+    .menu-item-c{
+      text-decoration: none;
+      color: white;
+      text-align: center;
+       
+
+    }
+    .menu-item-c:hover{
+      color: #1E90FF;
+      border-bottom: 2px solid #1E90FF;
+      
+
+      .menu-item-f ul{
+        opacity: 0.5;
+      }
+      .menu .menu-item-f{
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .search-container {
+    border 0.25em solid black;
+    margin: 0.5em 1em 0.5em 1em;
+    padding: 0.25em 1em 0.25em 1em;
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .5em;
+
+    input[type=text] {
+        
+      border: 0;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      order: none;
+      font-size: 20px;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+

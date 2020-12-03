@@ -1,0 +1,83 @@
+.topnav {
+  border:none;
+  margin-top: 0;
+  display: flex;
+  align-items: baseline;
+  justy-content: space-between;
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky;    // 兼容 -webkit 内核的浏览器
+  top: 0;                          // 必须设一个值，否则不生效
+  line-height: 1.25em;
+
+  .blog-title  .logo {
+    margin: 0 1.5em 0 1.5em;
+    color: #1E90FF;
+    font-size: 1.5em;
+    font-family: "comic sans ms";
+    text-decoration: none;
+
+    &:hover{
+      cursor: pointer;
+
+      ::before{
+        content: attr(title);
+      }
+
+      ::after{
+        content: " ";
+        background-color: #d9444a;
+      }
+    }
+
+  }
+
+  .nav {
+    margin: 0 .75em 0 0.75em;
+
+    .menu {
+      margin: 0 .75em 0 0.75em;
+      //padding: 0;
+
+      .menu-item {
+        display: inline-block;
+        margin: 0 .75em 0 .75em;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .menu-item-link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: #1E90FF;
+        border-bottom: 2px solid #1E90FF;
+      }
+    }
+  }
+
+  .search-container {
+    border 0.25em solid black;
+    margin: 0.5em 1em 0.5em 1em;
+    padding: 0.25em 1em 0.25em 1em;
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+
+    input[type=text] {
+        
+      border: 0;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      order: none;
+      font-size: 20px;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid black;
+      }
+    }
+  }
+}

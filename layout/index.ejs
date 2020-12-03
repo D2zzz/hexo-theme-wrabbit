@@ -1,0 +1,18 @@
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+    <article class="post">
+      <div class="post-title">
+        <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+      </div>
+      <div class="post-excerpt">
+        <%- post.excerpt %>
+      </div>
+      <div class="post-meta">
+        <span class="build-time">创建时间：<%- date(post.date, "YYYY-MM-DD") %></span>
+        <span class="edit-time">创建时间：<%- date(post.editordate, "YYYY-MM-DD") %></span>
+        <span class="post-time">创建时间：<%- date(post.postdate, "YYYY-MM-DD") %></span>
+      </div>
+    </article>
+  <% }) %>
+</section>
+<%- partial('_partial/paginator') %>

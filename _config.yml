@@ -1,0 +1,66 @@
+#----------
+# hexo-theme-wrabbit     
+# author：Mew Lin
+#----------
+
+
+#-------------------
+# Site全局
+#-------------------
+
+
+#-------------------
+# TopNav顶部导航栏
+# 这里的信息后边可以利用但是有些显示的方式或功能不方便操控
+#-------------------
+menu:    # 菜单
+  Home: /    # 主页
+  Archive: /archives      # 归档 
+  About: /about       # 关于页
+  Tags: /tags
+RSS: /atom.xml        # RSS调用
+
+#-------------------
+# Content 评论
+#-------------------
+excerpt_link: Read More
+fancybox: true
+
+
+#-------------------
+# Sidebar边注栏
+#-------------------
+sidebar: right
+widgets:  # 小部件
+- category  # 分类
+- tag  # 标签
+- tagcloud  # 标签云
+- archive  # 档案室
+- recent_posts  # 最新文章
+
+# display widgets at the bottom of index pages (pagination == 2)
+# 在索引页面的底部显示小部件(分页== 2)
+index_widgets: # 主页部件
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior部件行为
+archive_type: 'monthly' # 档案类型
+show_count: false # 显示计数
+
+# Miscellaneous杂项
+google_analytics:
+gauges_analytics:
+favicon: /favicon.png  # 网页图标
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+
+
+footer:
+  # 指定网站设置的日期
+  # 如果没定义将会使用当前年份
+  since: 2020
