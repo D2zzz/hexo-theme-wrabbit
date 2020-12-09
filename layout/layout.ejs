@@ -4,10 +4,13 @@
   <body>
     <%- partial('_partial/topnav') %>
     <%- partial('_partial/header') %>
-    <main class="main">
-      <%- partial('_partial/header') %>
-      <%- body %>
-    </main>
+    <div class="home-contain">
+      <%- partial('_partial/L-Box') %>
+      <main class="main"> 
+        <%- body %>
+      </main>
+      
+    </div>
     <%- partial('_partial/footer') %>
   </body>
 </html>
